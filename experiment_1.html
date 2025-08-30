@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio & Timetable</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url("https://t4.ftcdn.net/jpg/12/07/09/89/360_F_1207098983_CsunDrCnisVjfYfaxa05Wk7I83mRA3Th.jpg") no-repeat center center/cover;
+      color: white;
+      background-cover;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 5px;
+      font-size: 1em;
+      background: #ff9800;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #e68900;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #1e3d59;
+      border-bottom: 2px solid #1e3d59;
+      padding-bottom: 5px;
+      margin-top: 0;
+    }
+
+    /* Portfolio */
+    .portfolio-section {
+      margin-bottom: 25px;
+      padding: 15px;
+      border-left: 4px solid #1e3d59;
+      background: #f9fbfd;
+      border-radius: 8px;
+    }
+    .portfolio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .portfolio-header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #1e3d59;
+    }
+
+    /* Timetable */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    thead {
+      background: #1e3d59;
+      color: white;
+    }
+    tbody tr:nth-child(even) {
+      background: #f4f6f9;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background: #1e3d59;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Mayank Garg</h1>
+      <p>Front-End Developer | Creative Designer | Tech Enthusiast</p>
+      <a href="#portfolio" class="btn">My Portfolio</a>
+      <a href="#timetable" class="btn">Timetable</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <div class="container" id="portfolio">
+    <h2>My Portfolio</h2>
+    <p>Explore my work, projects, and skills below.</p>
+
+    <!-- About Me -->
+    <div class="portfolio-section portfolio-header">
+      <div>
+        <h3>About Me</h3>
+        <p>Hello! I am a passionate Front-End Developer with strong skills in building responsive and modern web applications. I enjoy solving problems and designing clean user interfaces. I’m always curious to learn and explore new technologies in web development.</p>
+      </div>
+      <img src="https://i.pinimg.com/736x/5d/5e/31/5d5e31ee74387f61059689e71d820234.jpg" alt="Profile Picture">
+    </div>
+
+    <!-- Education -->
+    <div class="portfolio-section">
+      <h3>Education</h3>
+      <p>BTech  in Computer Science – GLA University (2020)</p>
+      <p>Front-End Development Bootcamp – ABC Institute (2021)</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="portfolio-section">
+      <h3>Skills</h3>
+      <p>HTML5, CSS3, JavaScript</p>
+      <p>React.js, Bootstrap, Tailwind</p>
+      <p>Responsive Web Design</p>
+      <p>Git & GitHub</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="portfolio-section">
+      <h3>Contact</h3>
+      <p>Email: mayank.garg_cs24@gla.ac.in</p>
+      <p>Phone: +91 9058767010</p>
+      <p>LinkedIn: linkedin.com/in/Mayankgarg</p>
+    </div>
+  </div>
+
+  <!-- Timetable -->
+  <div class="container" id="timetable">
+    <h2>Academic Timetable</h2>
+    <p>Here is my weekly academic schedule:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>9:00 - 10:00</th>
+          <th>10:00 - 11:00</th>
+          <th>11:00 - 12:00</th>
+          <th>12:00 - 1:00</th>
+          <th>2:00 - 3:00</th>
+          <th>3:00 - 4:00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Break</td>
+          <td>Computer</td>
+          <td>Sports</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Break</td>
+          <td>English</td>
+          <td>Arts</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Math</td>
+          <td>Computer</td>
+          <td>English</td>
+          <td>Break</td>
+          <td>Science</td>
+          <td>Sports</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>History</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>Break</td>
+          <td>English</td>
+          <td>Computer</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td>Break</td>
+          <td>Arts</td>
+          <td>Sports</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mayank Garg | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
